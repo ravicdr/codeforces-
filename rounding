@@ -1,0 +1,22 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cin>>n;
+    int x=n-n%10;
+    int a=x;
+    int b=a+10;
+    int c=n-a;
+    int d=b-n;
+    if(c<d){
+        cout<<a;
+    }
+    else{
+        cout<<b;
+    }
+}
+
