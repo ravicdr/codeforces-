@@ -1,0 +1,35 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  int hh,mm;
+  char b;
+  cin>>hh>>b>>mm;
+//  cout<<hh<<b<<mm;
+int a;
+cin>>a;
+int mm1=mm+a;
+int x=mm1%60;
+int y=mm1/60;
+hh+=y;
+hh=hh%24;
+mm=x;
+if(hh%10==hh&&mm%10==mm)
+{
+    cout<<0<<hh<<':'<<0<<mm;
+}
+else if(hh%10==hh&&mm%10!=mm)
+    {
+         cout<<0<<hh<<':'<<mm;
+    }
+    else if(hh%10!=hh&&mm%10==mm){
+         cout<<hh<<':'<<0<<mm;
+    }
+    else{
+         cout<<hh<<':'<<mm;
+    }
+}
+
